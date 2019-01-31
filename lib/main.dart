@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'dashboard.dart';
 import 'profile.dart';
+import './admiss.dart';
 import 'package:flutter/scheduler.dart' show timeDilation;
+import 'package:uneva_flutter/Board.dart';
 
 String appTitle = 'Uneva';
 void main() => runApp(MyApp());
@@ -19,6 +21,8 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatelessWidget {
   final String title;
+  var result;
+  List<Board> boardMessages;
 
   MyHomePage({Key key, this.title}) : super(key: key);
 
@@ -66,11 +70,16 @@ class MyHomePage extends StatelessWidget {
             ListTile(
               title: Text('Admissions'),
               leading: Icon(Icons.line_weight),
-              onTap: () {
+              onTap: () async {
                 // Update the state of the app
                 // ...
                 // Then close the drawer
                 Navigator.pop(context);
+                result = await Navigator.push(
+                    context,
+                    new MaterialPageRoute(
+                        builder: (BuildContext context) =>
+                        new Admiss()));
               },
             ),
 
@@ -122,7 +131,7 @@ class MyHomePage extends StatelessWidget {
                     context,
                     new MaterialPageRoute(
                         builder: (BuildContext context) =>
-                        new Profile()));
+                        new Profile(boardMessages: result,)));
               },
             ),
 

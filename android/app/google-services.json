@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "778888519287",
+    "firebase_url": "https://uneva-flutter.firebaseio.com",
+    "project_id": "uneva-flutter",
+    "storage_bucket": "uneva-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778888519287:android:ebf3ad9574551ba1",
+        "android_client_info": {
+          "package_name": "com.example.unevaflutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778888519287-ecinm3hparsbtijoqubhv95a5vnfv8q8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6knY-uwzgeDRvF_KgkumjRW_ZCUh9VB8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
